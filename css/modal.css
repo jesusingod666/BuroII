@@ -1,0 +1,149 @@
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.modal__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__content {
+    background-color: #fff;
+    color: #000;
+    max-width: 250px;
+    padding: 10px;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .modal__content {
+        max-width: 815px;
+        padding: 50px 110px 80px 107px;
+    }
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.title__text {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    margin: 0 0 50px 0;
+}
+
+
+.form__label-email, 
+.form__label-password {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 10px;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+}
+
+.form__label-checkbox {
+    margin-bottom: 37px;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+}
+
+.form__label-checkbox input {
+    margin-right: 15px;
+}
+
+.form__label-checkbox:hover {
+    font-weight: 700;
+}
+
+.form__input {
+    width: 230px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.form__input:focus {
+    outline: none;
+}
+
+@media (min-width: 768px) {
+    .form__input {
+        width: 600px;
+    }
+}
+
+
+.form__button {
+    color: white;
+    background-color: #0D4F80;
+    width: 230px;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.form__button:hover {
+    background-color: #0A314E; 
+}
+
+@media (min-width: 768px) {
+    .form__button {
+        width: 600px;
+    }
+}
+
+.link__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__link {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    color: #376D95;
+}
+
+.modal__link:nth-of-type(1) {
+    margin-right: 18px;
+}
+
+.modal__link--grey {
+    color: #999999;
+}
+
+.modal__link:hover {
+    text-decoration: underline;
+}
+
+.modal__close {
+    position: absolute;
+    right: 22px;
+    top: 27px;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
